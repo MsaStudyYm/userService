@@ -19,7 +19,7 @@ public class WebSecurity {
             .csrf()
             .disable()
             .authorizeHttpRequests()
-            .antMatchers("/users/**")
+            .antMatchers("/**")
             .permitAll();
 
 

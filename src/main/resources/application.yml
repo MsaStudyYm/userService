@@ -7,7 +7,7 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: rootym
-    url: jdbc:mysql://10.10.10.158:3306/msa_test
+    url: jdbc:mysql://127.0.0.1:3306/msa_test
     password: '1234'
   jpa:
     properties:
@@ -29,3 +29,9 @@ eureka:
 
 greeting:
   message: Welcome to the YM's User service
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh, health, beans
